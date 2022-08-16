@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+main.home {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  gap: 1rem;
+
+  padding: 1.5rem;
+}
+
+main.home img {
+  width: 100%;
+}
+
+main img {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+  background-color: #eee;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+nav * {
+  padding: 3px;
+  border-bottom: 3px solid #fff;
+}
+
+nav *:hover {
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+header h1 {
+  font-family: 'Fredoka One', cursive;
+  color: #ffa500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+  border: 3px solid #ffa500;
+  border-radius: 1rem;
+
+  text-align: center;
+}
+
+.container {
+  font-size: 110%;
+  display: flex;
+  align-items: center;
+}
+
+.container h4,
+.container ul {
+  margin-bottom: 0.5rem;
+}
