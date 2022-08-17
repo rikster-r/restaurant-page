@@ -8,11 +8,13 @@ function createHeader() {
   let header = document.createElement('header');
 
   let logo = document.createElement('h1');
+  logo.classList.add('nav-link');
   logo.innerText = 'POMODORO';
+  logo.addEventListener('click', () => loadHome());
   header.appendChild(logo);
 
   let nav = document.createElement('nav');
-  
+
   let link1 = document.createElement('h3');
   link1.classList.add('nav-link');
   link1.innerText = 'Home';
@@ -24,7 +26,7 @@ function createHeader() {
   link2.innerText = 'About';
   link2.addEventListener('click', () => loadAbout());
   nav.appendChild(link2);
-  
+
   let link3 = document.createElement('h3');
   link3.classList.add('nav-link');
   link3.innerText = 'Contact';
